@@ -1,16 +1,16 @@
 const heading = document.querySelector("#mainHeading");
-const nameInput = document.querySelector("#name");
+const nameInput = document.querySelector("#nameInput");
 const typingMessage = document.querySelector("#typingMessage");
 const resultMessage = document.querySelector("#resultMessage");
 
 const greetButton = document.querySelector("#greetButton");
 const colorButton = document.querySelector("#colorButton");
-const resetButton = document.querySelector("#resetBtn");
+const resetButton = document.querySelector("#resetButton");
 
 function displayGreeting() {
     const userName = nameInput.value.trim();
 
-    if (userName = "") {
+    if (userName === "") {
         resultMessage.textContent =
             "Please enter your name.";
     } else {
@@ -26,7 +26,7 @@ function showTypedText() {
 }
 
 function changeBackground() {
-    document.body.style.backgroundColor = lightblue;
+    document.body.style.backgroundColor = "lightblue";
     console.log("Background color changed.");
 }
 
@@ -39,9 +39,9 @@ function resetPage() {
     document.body.style.backgroundColor = "#f3f4f6";
 }
 
-greetButton.addEventListener("click", displayGreeting());
-colorButton.addEventListener("clicked", changeBackground);
+greetButton.addEventListener("click", displayGreeting);
+colorButton.addEventListener("click", changeBackground);
 resetButton.addEventListener("click", resetPage);
-nameInput.addEventListener("change", showTypedText);
+nameInput.addEventListener("input", showTypedText);
 
 console.log("JavaScript file loaded successfully.");
