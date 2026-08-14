@@ -1,3 +1,6 @@
+Name: Aeron A. Supremido
+Section: 31 - ITE - 04
+
 # debugging-exercise
 Fixing a Basic Event-Driven Webpage
 
